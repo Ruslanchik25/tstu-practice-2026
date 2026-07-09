@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление банковской карты</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+</head>
+
+<body class="bg-light d-flex align-items-center h-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 p-4 shadow border-top border-primary" data-testing>
+                <h2 class="h5 text-muted mb-3">Добавить карту</h2>
+                <form class="bg-white p-3 border rounded">
+                    <!-- BEGIN (write your solution here) -->
+                    <div class="row mb-3">
+                        <div class="col-8">
+                            <label for="name" class="text-muted small form-label">Владелец карты</label>
+                            <input id="name" type="text" class="form-control" placeholder="Фамилия Имя">
+                        </div>
+                        <div class="col-4">
+                            <label for="validity" class="text-muted small form-label">Срок действия</label>
+                            <input id="validity" type="text" class="form-control" placeholder="Месяц / Год">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-9">
+                            <label for="card-number" class="text-muted small form-label">Номер карты</label>
+                            <input id="card-number" type="number" class="form-control" placeholder="Номер карты">
+                        </div>
+                        <div class="col-3">
+                            <label for="cvc" class="text-muted small form-label">CVC</label>
+                            <input id="cvc" type="number" class="form-control" placeholder="CVC">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="description" class="text-muted small form-label">Описание карты</label>
+                            <input id="description" type="text" class="form-control" placeholder="Описание карты">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="info" class="text-muted small form-label">Дополнительная информация</label>
+                            <textarea rows="5" id="info" class="form-control" placeholder="Дополнительная информация"></textarea>
+                        </div>
+                    </div>
+                    <div class="row text-end">
+                        <div class="col">
+                            <button type="button" class="btn btn-success">Добавить</button>
+                            <button type="button" class="btn btn-warning">Отмена</button>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
