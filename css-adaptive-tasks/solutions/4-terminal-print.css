@@ -1,0 +1,23 @@
+@media print {
+    html,
+    body {
+      background-color: #fff !important;
+    }
+  
+  
+    .terminal {
+      background: #fff !important;
+      color: #000;
+      border: 1px solid #000; 
+    }
+  
+    .code-tag{
+      color: #c62828;
+    } 
+    .code-attr{
+      color: #936315;
+    } 
+    .code-string {
+      color: #2e7d32;
+    }
+  }
