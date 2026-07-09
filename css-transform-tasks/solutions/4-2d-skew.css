@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url("./assets/fonts/BlackOpsOne-Regular.ttf");
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+    color: #846ffd;
+    font: 20px/1.5 "Black Ops One", monospace;
+  
+    background: #9bf6ff;
+  }
+  
+  h1 {
+    margin: 0;
+  
+    font-size: 150px;
+    letter-spacing: 0.075em;
+  }
+  
+  /* BEGIN (write your solution here) */
+  .shadow-skew {
+    display: inline-block;
+    text-transform: uppercase;
+    transform: skewY(-10deg);
+    position: relative;
+  }
+
+  .shadow-skew::before {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #0003;
+    transform: skewX(50deg) translate(-0.35em, 0.12em) scaleY(0.6);
+    z-index: -1;
+  }
+  /* END */
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
