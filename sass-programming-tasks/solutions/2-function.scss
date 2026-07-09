@@ -1,0 +1,11 @@
+$grid-width: 45px;
+$gutter-width: 15px;
+
+// BEGIN (write your solution here)
+@function grid-container-width($num-columns) {
+    @return ($num-columns * $grid-width) + (($num-columns - 1) * $gutter-width);
+  }
+
+  .container {
+    width: grid-container-width(15);
+  }
